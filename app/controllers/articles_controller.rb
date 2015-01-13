@@ -17,6 +17,11 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    
+    # why? idk
+    @comment = Comment.new
+    @comment.article_id = @article.id
+    # @comment = @article.comments.new
   end
 
   def destroy
