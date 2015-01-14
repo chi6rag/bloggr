@@ -16,3 +16,9 @@ b.save
 
 a.comments.new(author_name: 'Chirag Aggarwal', body: 'wow! impressive!').save
 b.comments.new(author_name: 'Chirag Aggarwal', body: 'I am for sure gonna follow that!').save
+
+a.tags.create(name: 'Algorithm')
+a.tags.create(name: 'Letterpress')
+
+b.tags.create(name: 'Productivity')
+b.tags.create(name: '30')
