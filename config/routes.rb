@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     resources :comments  # This gives article_comments_ path/url
   end
   resources :tags
+  resources :authors
 end
